@@ -1,9 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-function MainPage() {
-	return (
-		<p>What up dog</p>
-	);
+class MainPage extends Component {
+	
 }
 
 export default MainPage;

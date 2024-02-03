@@ -1,0 +1,17 @@
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String
+  password: String
+  email: AWSEmail
+  Item: [Item] @hasMany(indexName: "byUser", fields: ["id"])
+}
+
+type Item @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  description: String
+  location: String
+  category: String
+  userID: ID! @index(name: "byUser")
+}
+ 

@@ -10,6 +10,11 @@
       "StackName": "amplify-billyslist-dev-213956",
       "StackId": "arn:aws:cloudformation:us-east-1:381491933084:stack/amplify-billyslist-dev-213956/aa68e080-c256-11ee-9d40-0ac76a49f917",
       "AmplifyAppId": "d1x0zyjthqfnkh"
+    },
+    "categories": {
+      "auth": {
+        "billyslist": {}
+      }
     }
   }
 }
